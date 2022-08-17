@@ -34,7 +34,7 @@ exports.run = async (client, message, args) => {
 
   let sures;
   let cst1 = ise[0];
-  let cstss = ise[1];
+  let insan = ise[1];
   if (time.includes("s")) sures = cst1 * 1000;
   if (time.includes("m")) sures = cst1 * 60 * 1000;
   if (time.includes("h")) sures = cst1 * 60 * 60 * 1000;
@@ -85,7 +85,7 @@ Kazanan: ${cstss}`);
         hosted: message.author.id,
         sure: sures,
         zaman: zaman,
-        toplam: cstss,
+        toplam: insan,
         odul: odul
       });
     });
